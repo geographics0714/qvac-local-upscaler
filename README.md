@@ -19,7 +19,7 @@ node src/upscale.js ./samples/photo.jpg
 
 ## SDK version
 
-Built and tested against `@qvac/sdk` **v0.19.x** (see [package.json](package.json)).
+Built and tested against `@qvac/sdk` **v0.19.1** (see [package.json](package.json) / [package-lock.json](package-lock.json)).
 
 ## Requirements
 

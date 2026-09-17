@@ -8,7 +8,10 @@ npm-debug.log*
 .DS_Store
 
 # Keep arbitrary local test photos (e.g. your own snapshots) out of the
-# public repo — only the generated smoke-test image is tracked.
+# public repo — only the generated smoke-test image and its own output are
+# tracked, since those are the only samples/ assets we actually own.
 samples/*
 !samples/test-gradient.png
+!samples/test-gradient.upscaled.png
+!samples/comparison.html
 !samples/README.md

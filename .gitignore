@@ -6,3 +6,9 @@ comparison.html
 qvac.config.json
 npm-debug.log*
 .DS_Store
+
+# Keep arbitrary local test photos (e.g. your own snapshots) out of the
+# public repo — only the generated smoke-test image is tracked.
+samples/*
+!samples/test-gradient.png
+!samples/README.md

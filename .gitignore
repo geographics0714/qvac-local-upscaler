@@ -1,0 +1,7 @@
+node_modules/
+*.upscaled.png
+comparison.html
+.qvac/
+qvac.config.json
+npm-debug.log*
+.DS_Store

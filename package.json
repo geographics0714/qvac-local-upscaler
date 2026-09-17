@@ -1,0 +1,28 @@
+{
+  "name": "qvac-local-upscaler",
+  "version": "1.0.0",
+  "description": "A local, on-device photo upscaler built with Tether's QVAC SDK. Runs ESRGAN super-resolution entirely on your machine, no cloud, no API key.",
+  "type": "module",
+  "main": "src/upscale.js",
+  "bin": {
+    "qvac-upscale": "./src/upscale.js"
+  },
+  "scripts": {
+    "start": "node src/upscale.js"
+  },
+  "keywords": [
+    "qvac",
+    "on-device-ai",
+    "upscaler",
+    "esrgan",
+    "image-upscaling",
+    "offline-ai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@qvac/sdk": "^0.19.0"
+  },
+  "engines": {
+    "node": ">=22.17"
+  }
+}

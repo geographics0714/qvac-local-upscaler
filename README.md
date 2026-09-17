@@ -8,10 +8,6 @@ fully offline.
 
 It calls the QVAC SDK's `loadModel()` and `upscale()` functions directly.
 
-**Reviewing this submission?** See [REVIEWER_GUIDE.pdf](REVIEWER_GUIDE.pdf)
-for a step-by-step verification guide (static repo checks + exact commands
-to run it yourself).
-
 ## What it does
 
 Give it an image, it runs on-device ESRGAN super-resolution and opens a

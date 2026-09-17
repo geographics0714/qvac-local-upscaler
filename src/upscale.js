@@ -51,7 +51,9 @@ Example:
 
 function toBase64Image(buffer, ext) {
   const mime = ext === ".jpg" || ext === ".jpeg" ? "image/jpeg" : "image/png";
-  return `data:${mime};base64,${buffer.toString("base64")}`;
+  // upscale() resolves outputs as Uint8Array, not a Node Buffer — Uint8Array's
+  // own toString() ignores the "base64" argument, so wrap it in Buffer.from first.
+  return `data:${mime};base64,${Buffer.from(buffer).toString("base64")}`;
 }
 
 function writeComparisonPage({ inputPath, outputPath, inputBuf, outputBuf, stats }) {

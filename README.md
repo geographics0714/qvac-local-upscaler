@@ -57,6 +57,15 @@ Example:
 node src/upscale.js ./samples/portrait.jpg --repeats 1 --tile-size 128
 ```
 
+A tiny generated test image is included at `samples/test-gradient.png` so you
+can smoke-test the pipeline immediately without supplying your own photo:
+
+```bash
+node src/upscale.js samples/test-gradient.png
+```
+
+(Regenerate it any time with `node scripts/make-test-png.js`.)
+
 On first run the model weights download automatically with a progress bar
 printed to the terminal. Every run after that loads from the local cache and
 runs fully offline — your image never leaves your machine.
